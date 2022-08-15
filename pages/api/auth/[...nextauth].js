@@ -22,7 +22,7 @@ async function refreshAccessToken(token) {
 
     return {
       ...token,
-      error: "Could not refresh access token",
+      error: "RefreshAccessTokenError",
     }
   }
 }
