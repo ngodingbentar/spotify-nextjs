@@ -8,7 +8,6 @@ function Songs() {
   return (
     <div className='text-white px-8 flex flex-col space-y-1 pb-20'>
       {playlist?.tracks.items.map((track, i) => (
-        // <div key={track.track.id}>{track.track.name}</div>
         <Song key={track.track.id} track={track.track} order={i} />
       ))}
     </div>
