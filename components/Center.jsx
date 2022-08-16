@@ -38,11 +38,17 @@ function Center() {
   }, [spotifyApi, playlistId])
 
   console.log('playlist', playlist)
+
+  const logOut = () => {
+    console.log('logout')
+  }
   
   return (
     <div className='flex-grow h-screen overflow-y-scroll scrollbar-hide'>
       <header className='absolute top-5 right-8 ' >
-        <div className='flex items-center bg-black text-white space-x-3 opacity-90 hover:opacity-80 cursor-pointer rounded-full p-1 pr-2 '>
+        <div
+          className='flex items-center bg-black text-white space-x-3 opacity-90 hover:opacity-80 cursor-pointer rounded-full p-1 pr-2'
+          onClick={signOut}>
           <img
             src={session?.user?.image}
             alt="noImg"
